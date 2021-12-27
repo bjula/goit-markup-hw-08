@@ -1,0 +1,13 @@
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-title-color);
+}
+.works__title, 
+.team__title, 
+.clients__title{
+    margin-bottom: 50px;
+}

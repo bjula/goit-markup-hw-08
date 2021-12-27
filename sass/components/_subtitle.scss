@@ -1,0 +1,21 @@
+.subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.subtitle--color-light{
+    color:var(--second-text-color);
+}
+.subtitle--color-dark{
+    color: var(--main-title-color);
+}
+
+.benefits__subtitle{
+    margin-bottom: 10px;
+}
+
+.footer__subtitle{
+    margin-bottom: 20px;
+}

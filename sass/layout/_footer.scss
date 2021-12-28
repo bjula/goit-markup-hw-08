@@ -5,12 +5,31 @@
 }
 
 .footer__container{
-    display: flex;
-    align-items: baseline;
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: baseline;
+    }
+    @media screen and (min-width: 768px) 
+    and (max-width: 1199px){
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    @media screen and (min-width: 1200px){
+        justify-content: space-between;
+    }
 }
 
 .footer__box{
-    margin-right: 70px;
+    @media screen and (max-width: 1199px){
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+    }
 }
 
 .address{
@@ -24,10 +43,6 @@
 
 .address__link{
     display: block;
-    // font-weight: 400;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
     color: var(--mail-tel-footer-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 9px;
@@ -38,24 +53,24 @@
     }
 }
 
-
-
 .footer__form{
-    margin-left: auto;
+    @media screen and (max-width: 768px){
+        max-width: 450px;
+    }
+    @media screen and (min-width: 768px) 
+    and (max-width: 1199px){
+        width: 450px;
+    }
 }
 
 .footer__subscribe{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+     @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer__input{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    min-width: 358px;
     padding: 15px 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -66,6 +81,14 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (max-width: 1199px){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px){
+        min-width: 358px;
+    }
 
     &::placeholder{
         font-weight: 400;

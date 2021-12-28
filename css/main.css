@@ -133,7 +133,14 @@ button {
 }
 
 .footer__logo {
+  font-size: 24px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
 }
 
 .contact-list {
@@ -323,7 +330,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-send {
+    margin-left: 12px;
+  }
 }
 
 .btn-send__icon {
@@ -877,13 +890,42 @@ button {
   background-color: var(--hero-footer-background-color);
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
-.footer__box {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__box {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-right: 70px;
+  }
 }
 
 .address {
@@ -906,21 +948,26 @@ button {
   color: var(--accent-color);
 }
 
-.footer__form {
-  margin-left: auto;
+@media screen and (max-width: 768px) {
+  .footer__form {
+    max-width: 450px;
+  }
 }
 
-.footer__subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__input {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  min-width: 358px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -931,6 +978,19 @@ button {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    min-width: 358px;
+  }
 }
 
 .footer__input::placeholder {

@@ -1,12 +1,23 @@
 .button-list{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px){
+        justify-content: center;
+    }
 }
+
 .portfolio__button-list{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }
 }
 
 .button-list__item{
+    @media screen and (max-width: 767px){
+        margin-bottom: 15px;
+    }
     &:not(:last-child){
         margin-right: 8px;
     }

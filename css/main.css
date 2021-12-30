@@ -80,7 +80,7 @@ button {
 
 @media screen and (max-width: 479px) {
   .container {
-    max-width: 480px;
+    max-width: 479px;
   }
 }
 
@@ -135,7 +135,24 @@ button {
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.17;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
@@ -149,33 +166,41 @@ button {
   }
 }
 
-.contact-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .contact-list__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
-.page-header__contact-list {
-  margin-left: auto;
-}
-
-.contact-list__item:first-child {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contact-list__item:first-child {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .contact-list__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--main-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list__link:hover, .contact-list__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact-list__icon {
@@ -188,6 +213,17 @@ button {
 .contact-list__link:hover .contact-list__icon,
 .contact-list__link:focus .contact-list__icon {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+  .contact-list__icon-tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .title {
@@ -446,9 +482,27 @@ button {
   border-bottom: 1px solid var(--line-color);
 }
 
+.page-header__main-nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__main-nav {
+    justify-content: start;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-header__link-list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__link-list {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -458,35 +512,60 @@ button {
   }
 }
 
-.open-menu-btn {
-  display: block;
-  width: 40px;
-  height: 40px;
-  color: #000000;
-  background-color: transparent;
-  box-sizing: border-box;
+@media screen and (min-width: 768px) {
+  .page-header__contact-list {
+    display: block;
+    margin-left: auto;
+  }
 }
 
-.open-menu-btn__icon {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .page-header__contact-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #212121;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-open-btn__icon {
   width: 40px;
   height: 40px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.open-menu-btn:hover .open-menu-btn__icon,
-.open-menu-btn:focus .open-menu-btn__icon {
+.menu-open-btn:hover .menu-open-btn__icon,
+.menu-open-btn:focus .menu-open-btn__icon {
   fill: var(--accent-color);
 }
 
-.sit-nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .menu-open-btn__icon {
+    display: none;
+  }
 }
 
-.link-list {
+.page-header__sit-nav {
   display: flex;
+  align-items: center;
 }
 
 .link-list__item:not(:last-child) {
@@ -523,6 +602,30 @@ button {
   background-color: var(--accent-color);
   border-radius: 2px;
   bottom: 0;
+}
+
+.menu-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #212121;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+}
+
+.menu-close-btn__icon {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover .menu-close-btn__icon,
+.menu-close-btn:focus .menu-close-btn__icon {
+  fill: var(--accent-color);
 }
 
 .hero {

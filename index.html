@@ -230,7 +230,22 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__photo" src="./images/img-person1.jpg" alt="Портрет мужчины">
+                        <picture>
+                            <source srcset="./images/team/img-person1.jpg 1x, 
+                            ./images/team/img-person1-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/team/img-person-tab-1.jpg 1x,
+                            ./images/team/img-person-tab-1-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/team/img-person-mob-1.jpg 1x,
+                            ./images/team/img-person-mob-1-2x.jpg 2x"
+                            media="(min-width: 480px)"
+                            />
+                            <img class="team__photo" 
+                            src="./images/team/img-person-mob-1.jpg" alt="Портрет мужчины"/>
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__person">Игорь Демьяненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -271,7 +286,23 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/img-person2.jpg" alt="Портрет женщины">
+                        <picture>
+                            <source srcset="./images/team/img-person2.jpg 1x, 
+                            ./images/team/img-person2-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/team/img-person-tab-2.jpg 1x,
+                            ./images/team/img-person-tab-2-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/team/img-person-mob-2.jpg 1x,
+                            ./images/team/img-person-mob-2-2x.jpg 2x"
+                            media="(min-width: 480px)"
+                            />
+                            <img class="team__photo" src="./images/team/img-person-mob-2.jpg"
+                            alt="Портрет женщины"
+                            />
+                        </picture>
                         <div class="team__card">
                             <h3 class="team__person">Ольга Репина</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -312,86 +343,117 @@
                         </div>
                     </li>
                     <li class="team__item">
-                    <img class="team__photo" src="./images/img-person3.jpg" alt="Портрет мужчины">
-                    <div class="team__card">
-                        <h3 class="team__person">Николай Тарасов</h3>
-                        <p class="team__position">Marketing</p>
-                        <ul class="team__social-list social-list list">
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <picture>
+                            <source srcset="./images/team/img-person3.jpg 1x, 
+                            ./images/team/img-person3-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/team/img-person-tab-3.jpg 1x,
+                            ./images/team/img-person-tab-3-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/team/img-person-mob-3.jpg 1x,
+                            ./images/team/img-person-mob-3-2x.jpg 2x"
+                            media="(min-width: 480px)"
+                            />
+                            <img class="team__photo" src="./images/team/img-person-mob-3.jpg"
+                            alt="Портрет мужчины"
+                            />
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__person">Николай Тарасов</h3>
+                            <p class="team__position">Marketing</p>
+                            <ul class="team__social-list social-list list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="team__item">
-                    <img class="team__photo" src="./images/img-person4.jpg" alt="Портрет мужчины">
-                    <div class="team__card">
-                        <h3 class="team__person">Михаил Ермаков</h3>
-                        <p class="team__position">UI Designer</p>
-                        <ul class="team__social-list social-list list">
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link link
-                                    social-list__link--color-light">
-                                    <svg class="social-list__icon">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <picture>
+                            <source srcset="./images/team/img-person4.jpg 1x, 
+                            ./images/team/img-person4-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./images/team/img-person-tab-4.jpg 1x,
+                            ./images/team/img-person-tab-4-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./images/team/img-person-mob-4.jpg 1x,
+                            ./images/team/img-person-mob-4-2x.jpg 2x"
+                            media="(min-width: 480px)"
+                            />
+                            <img class="team__photo" src="./images/team/img-person-mob-4.jpg"
+                            alt="Портрет мужчины"/>
+                        </picture>
+                        <div class="team__card">
+                            <h3 class="team__person">Михаил Ермаков</h3>
+                            <p class="team__position">UI Designer</p>
+                            <ul class="team__social-list social-list list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link link
+                                        social-list__link--color-light">
+                                        <svg class="social-list__icon">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>

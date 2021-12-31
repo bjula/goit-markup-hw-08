@@ -47,17 +47,17 @@
                 </li>
             </ul>
 
-            <button type="button" class="menu-open-btn">
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" class="menu-open-btn js-open-menu">
                 <svg class="menu-open-btn__icon">
                     <use href="./images/icons.svg#menu-open"></use>
                 </svg>
             </button>          
         </div>
 
-        <div class="mob-menu">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
             <div class="container mob-menu__form">
                 <div class="mob-menu__top">
-                    <button type="button" class="menu-close-btn">
+                    <button type="button" class="menu-close-btn js-close-menu">
                         <svg class="menu-close-btn__icon">
                             <use href="./images/icons.svg#menu-close"></use>
                         </svg>
@@ -575,7 +575,10 @@
             </form>
         </div>
     </div>
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
